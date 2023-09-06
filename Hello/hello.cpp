@@ -1,4 +1,4 @@
-// Run with "g++ -o hello hello.cpp && ./hello" in the shell
+// Run with "g++ -o Hello/hello Hello/hello.cpp && ./Hello/hello" in the shell
 #include <iostream>
 using namespace std;
 
