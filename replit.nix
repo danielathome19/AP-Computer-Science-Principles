@@ -1,5 +1,6 @@
 { pkgs }: {
   deps = [
+    pkgs.go
     pkgs.nodejs
     pkgs.swift
     pkgs.rustup
