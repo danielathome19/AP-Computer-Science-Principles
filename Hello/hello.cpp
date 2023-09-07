@@ -1,4 +1,4 @@
-// Run with "g++ -o Hello/hello Hello/hello.cpp && ./Hello/hello" in the shell
+// Compile and run with "g++ -o Hello/hello.exe Hello/hello.cpp && ./Hello/hello.exe" in the shell
 #include <iostream>
 using namespace std;
 

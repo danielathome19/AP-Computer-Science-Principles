@@ -1,4 +1,4 @@
-// Run with "gcc -o Hello/hello Hello/hello.c && ./Hello/hello" in the shell
+// Compile and run with "gcc -o Hello/hello.exe Hello/hello.c && ./Hello/hello.exe" in the shell
 #include <stdio.h>
 
 int main(void) {
