@@ -1,5 +1,6 @@
 { pkgs }: {
   deps = [
+    pkgs.python39Packages.pip
     pkgs.go
     pkgs.nodejs
     pkgs.swift
