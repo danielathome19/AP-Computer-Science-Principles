@@ -1,5 +1,6 @@
 { pkgs }: {
   deps = [
+    pkgs.zig
     pkgs.python39Packages.pip
     pkgs.go
     pkgs.nodejs
