@@ -1,24 +1,10 @@
-run = "bundle exec ruby main.rb"
-hidden = [".bundle"]
-entrypoint = "main.rb"
+entrypoint = "main.py"
+modules = ["python-3.10:v18-20230807-322e88b"]
+
+hidden = [".pythonlibs"]
 
 [nix]
-channel = "stable-22_11"
+channel = "stable-23_05"
 
-[packager]
-language = "ruby"
-
-[packager.features]
-packageSearch = true
-guessImports = true
-
-[gitHubImport]
-requiredFiles = [".replit", "replit.nix", "README.md"]
-
-[languages]
-
-[languages.ruby]
-pattern = "**/*.rb"
-
-[languages.ruby.languageServer]
-start = "solargraph stdio"
+[deployment]
+run = ["sh", "-c", "python3 main.py"]

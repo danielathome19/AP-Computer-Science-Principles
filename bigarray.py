@@ -1,5 +1,6 @@
 import random
 lst = [random.randint(20, 91) for _ in range(19)]
+
 # 1. Print the Array from the beginning to the end
 for i in range(1, len(lst)):
   print(lst[i])
