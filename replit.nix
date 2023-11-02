@@ -1,5 +1,6 @@
 { pkgs }: {
   deps = [
+    pkgs.mono
     pkgs.zig
     pkgs.go
     pkgs.nodejs
