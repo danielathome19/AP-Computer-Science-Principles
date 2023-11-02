@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [ "$#" -ne 1 ]; then
-  printf "Usage: bash compile.sh folder/filename \n    or bash compile.sh filename\n"
+  printf "Usage: bash compile.sh filename \n    or bash compile.sh folder/filename\n"
   exit 1
 fi
 
