@@ -1,5 +1,6 @@
 { pkgs }: {
   deps = [
+    pkgs.elixir_1_13
     pkgs.mono
     pkgs.zig
     pkgs.go

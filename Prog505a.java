@@ -14,6 +14,23 @@ public class Prog505a {
     if (br <= 6) return 30 + (br-3) * 15;
     return 30 + 45 + (br-6) * 20;
   }
+
+  public static void printWinner(ArrayList<String> names, 
+                                 ArrayList<Integer> books, 
+                                 ArrayList<Integer> points) {
+    int win = points.get(0);
+    int spot = 0;
+    for (int lcv = 0; lcv < points.size(); lcv++) {
+      int p = points.get(lcv);
+      if (p > win) {
+        win = p;
+        spot = lcv;
+      }
+    }
+
+    System.out.printf("The winner is: %s with %d books read\n", 
+                      names.get(spot), books.get(spot));
+  }
   
   public static void main(String[] args) {
     Scanner input = new Scanner(System.in);
@@ -49,6 +66,7 @@ public class Prog505a {
       System.out.printf("%s\t%d\t%d\n", 
              names.get(lcv), books.get(lcv), points.get(lcv));
     }
-    
+
+    printWinner(names, books, points);
   }
 }
