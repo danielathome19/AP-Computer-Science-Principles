@@ -1,6 +1,6 @@
 <h1>Handbook on Programming in ?????</h1>
 
-**AP Computer Science Principles 2023-2024**
+**AP Computer Science Principles 2024-2025**
 
 FirstName LastName
 
