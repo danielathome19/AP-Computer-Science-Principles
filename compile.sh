@@ -6,7 +6,7 @@ if [ "$#" -ne 1 ]; then
 fi
 
 # Uncomment whichever compiler you're using and comment out the rest
-g++ -o "$1.exe" "$1.cpp" && ./"$1.exe"
-# gcc -o "$1.exe" "$1.c" && ./"$1.exe"
+# g++ -o "$1.exe" "$1.cpp" && ./"$1.exe"
+gcc -o "$1.exe" "$1.c" -lm && ./"$1.exe"
 # mcs -out:"$1.exe" "$1.cs" && mono "$1.exe"
 # rustc "$1.rs" -o ./"$1.exe" && ./"$1.exe"
