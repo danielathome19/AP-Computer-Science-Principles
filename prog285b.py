@@ -11,6 +11,9 @@ def main():
                 code  = int(ldata[1])
                 sales = float(ldata[2])
                 dude  = Salesperson(id, code, sales)
+                # List comprehension
+                # id, code, sales = [float(x) for x in line.split(' ')]
+                # id, code, sales = [float(x) if '.' in x else int(x) for x in line.split(' ')]
                 people.append(dude)
         for sp in people:  # for-each
             sp.calc()
