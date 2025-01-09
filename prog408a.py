@@ -4,7 +4,7 @@
 def main():
     try:
         data = []
-        with open("data/prg408a.dat", 'r') as f:
+        with open("data/prg408a.txt", 'r') as f:
             lines = f.readlines()
             for line in lines:
                 id, score = line.split(' ')
