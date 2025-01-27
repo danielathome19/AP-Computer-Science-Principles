@@ -1,0 +1,30 @@
+name: Unit Tests
+# Save file as ".github/workflows/unit-test.yml"
+
+on: [push, pull_request]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        python-version: [3.12]  # Test with multiple versions of Python; e.g., [3.7, 3.9, 3.12]
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ matrix.python-version }}
+
+    - name: Install dependencies
+      run: |  # If the repository has a requirements file, pip install them first
+        if [ -f requirements.txt ]; then
+          pip install -r requirements.txt
+        fi
+
+    - name: Run unit tests
+      run: |  # Unit test all files with the prefix 'test_' in the name
+        python -m unittest discover -s . -p 'test_*.py'
