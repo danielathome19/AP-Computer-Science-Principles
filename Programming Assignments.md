@@ -3,9 +3,9 @@
 ## 1. Basics
 
 * Prog52a
-* Prog54a
 * Prog54b
-* Prog54c
+* Prog54c (be sure to round the output either using a rounding function or string/print formatting)
+* Prog54a (store `miles` and `gallons` as ints; use type casting to do real [float] division when calculating MPG)
 * Prog54d
 * Prog59b
 * Prog82a
@@ -97,7 +97,7 @@
 * Prog213v (make `Bank` and `Transaction` classes)
 * Prog214c
 * Prog215h
-* Prog285b
+* Prog285b (be sure you understand the language's equivalent to a `foreach` loop by this point)
 * Prog408a (override equivalent to `.compareTo` or `<` operator; write bubble sort function)
 * Prog505a
 * Prog505b
