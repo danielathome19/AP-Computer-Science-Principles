@@ -228,7 +228,7 @@ The following is a self-study curriculum designed to learn the core concepts of 
 * 2D Arrays (array of arrays; i.e., Jagged Arrays)
 * Matrix Traversal using Nested Loops (Row-Major Order vs. Column-Major Order)
 * Multidimensional Arrays (if applicable; an actual matrix where the row length is the same across all rows; i.e., [in C#](https://code-maze.com/charp-multidimensional-jagged-array/))
-* Optionally, higher-dimensional (or $n$D) arrays/tensors (in languages like Python, you may want an external library for this; e.g., Numpy)
+* Optionally, higher-dimensional (or nD) arrays/tensors (in languages like Python, you may want an external library for this; e.g., Numpy)
 
 #### Exercises
 
